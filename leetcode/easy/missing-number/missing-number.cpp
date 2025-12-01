@@ -37,6 +37,7 @@ using std::vector;
 // Maybe it's possible to use HashMap, but I'll use math formula
 // sequence sum formula: n * (n + 1) / 2
 // The missing number equals: the expected sum - the actual sum of the array
+
 int missingNumber(const vector<int>& nums) {
 
   const int expectedSum = nums.size() * (nums.size() + 1) / 2;
