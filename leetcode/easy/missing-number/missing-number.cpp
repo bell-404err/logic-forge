@@ -5,6 +5,7 @@
 using std::cout;
 using std::vector;
 
+// Missing number - Task Description:
 // Given an array nums containing n distinct numbers in the range [0, n],
 // return the only number in the range that is missing from the array.
 //
@@ -32,9 +33,10 @@ using std::vector;
 // 0 <= nums[i] <= n         # all elements lie within [0, n]
 // All numbers in nums are unique
 
+
 // Maybe it's possible to use HashMap, but I'll use math formula
-// Find the missing number using the arithmetic sequence sum formula: n * (n + 1) / 2
-// The missing number equals the expected sum minus the actual sum of the array
+// sequence sum formula: n * (n + 1) / 2
+// The missing number equals: the expected sum - the actual sum of the array
 int missingNumber(const vector<int>& nums) {
 
   const int expectedSum = nums.size() * (nums.size() + 1) / 2;
@@ -44,3 +46,5 @@ int missingNumber(const vector<int>& nums) {
   }
   return expectedSum - realSum;
 }
+
+// 01.12.2025
