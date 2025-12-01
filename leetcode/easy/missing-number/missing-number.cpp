@@ -33,7 +33,6 @@ using std::vector;
 // 0 <= nums[i] <= n         # all elements lie within [0, n]
 // All numbers in nums are unique
 
-
 // Maybe it's possible to use HashMap, but I'll use math formula
 // sequence sum formula: n * (n + 1) / 2
 // The missing number equals: the expected sum - the actual sum of the array
